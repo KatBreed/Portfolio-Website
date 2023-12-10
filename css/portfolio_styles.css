@@ -10,9 +10,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 }
 
 body {
-    background-image: url("wanaka1.png");
+    background-image: url("tekapo2.jpg");
     height: 100%;
-    background-position-y: -25em;
+    background-position-y: 2em;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,12 +24,42 @@ nav ul > li {
     text-transform: uppercase;
 }
 
+body {
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
 /*===============================
         STYLING
 ================================*/
 ul {
     list-style-type: lower-greek;
     list-style-position: inside;
+}
+
+.avatar {
+    border-radius: 60%;
+    height: 8em;
+    max-width: 100%;
+}
+
+.span1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.span2 {
+    font-style: italic;
+}
+
+.copyright {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /*===============================
@@ -41,9 +71,17 @@ ul {
 }
 
 header, nav {
-    padding-left: 2em;
+    padding-left: 3em;
     padding-bottom: 4em;
     padding-top: 2em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+main {
+    margin-bottom: 3em;;
 }
 
 /*--- FULL SCREEN - GRID AND FLEX---*/
@@ -59,6 +97,11 @@ header, nav {
         grid-row: 1;
     }
 
+    .avatar_div {
+        grid-column: 3;
+        grid-row: 1
+    }
+
     nav {
         grid-column: 1;
         grid-row: 2;
@@ -67,5 +110,51 @@ header, nav {
     main {
         grid-column: 2;
         grid-row: 2;
+    }
+
+    footer {
+        grid-column: 3;
+        grid-row:3
+    }
+
+/*===============================
+        STYLING
+================================*/
+    .avatar_div, footer {
+        text-align: right;
+    }
+
+/*===============================
+    MARGINS, PADDING, BORDERS
+================================*/
+    body {
+        background-position-y: -5em;
+    }
+
+    .page_content {
+        margin: 5em;
+        border: 2px solid #000000;
+    }
+
+    header {
+        padding-left: 3em;
+        padding-bottom: 4em;
+        padding-top: 2em;
+    }
+
+    .avatar, footer {
+        margin-top: 2em;
+        margin-right: 4em;
+    }
+
+    nav {
+        padding-left: 5em;
+        padding-bottom: 4em;
+        padding-top: 1em;
+    }
+
+    main {
+        padding-left: 10em;
+        padding-top: 5em;
     }
 }
