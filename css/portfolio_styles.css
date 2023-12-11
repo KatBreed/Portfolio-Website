@@ -15,6 +15,8 @@ body {
     background-position-y: 2em;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 /*===============================
@@ -37,6 +39,10 @@ h1 {
 /*===============================
         STYLING
 ================================*/
+.nav_item {
+    cursor: pointer;
+}
+
 ul {
     list-style-type: lower-greek;
     list-style-position: inside;
@@ -63,9 +69,18 @@ ul {
 }
 
 /*Course Project Content*/
-.bookshop_img {
-    max-width: 100%;
-    height: 25em;
+.bookshop_img_dt {
+    width: 33em;
+    max-height: 100%;
+}
+
+.bookshop_img_mob {
+    width: 15em;
+    max-height: 100%;
+}
+
+.book_container {
+    text-align: center;
 }
 
 /*===============================
@@ -82,12 +97,36 @@ header, nav {
     padding-top: 2em;
 }
 
+nav {
+    margin-right: 10em;
+}
+
 p {
     margin-top: 1em;
 }
 
 main {
     margin-bottom: 3em;;
+}
+
+/*Course Project Content*/
+.bookshop_img_dt {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.bookshop_img_mob {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#course_project_content {
+    overflow-y: auto;
+    max-height: 830px;
 }
 
 /*==========================
@@ -124,6 +163,12 @@ main {
     footer {
         grid-column: 3;
         grid-row:3
+    }
+
+    .book_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
 /*===============================
