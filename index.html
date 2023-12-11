@@ -6,33 +6,41 @@
         <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
         <title>Katherine Breed</title>
         <link rel="stylesheet" href="css/portfolio_styles.css">
+        <script src="js/portfolio_js.js"></script>
     </head>
 
     <body>
+        <!--Page Wrapper-->
         <div class="page_content">
+            <!--Title Header-->
             <header>
                     <h1>Katherine Breed</h1>
                     <h4>Retail Customer Service</h4>
                     <h4>Studying for L5 Diploma in Web Development</h4>
             </header>
 
+            <!--Avatar Pic-->
             <div class="avatar_div">
                 <img class="avatar" src="images/avatar.jpg">
             </div>
 
+            <!--Navigation Links-->
             <nav>
                 <ul>
-                    <li>Course Project</li>
-                    <li>At Home Projects</li>
-                    <li>About Me</li>
-                    <li>Contact</li>
-                    <li>Bonus: Photography</li>
-                    <li>Bonus: Gaming</li>
+                    <li id="purpose">Purpose</li>
+                    <li id="course_project">Course Project</li>
+                    <li id="home_projects">At Home Projects</li>
+                    <li id="about_me">About Me</li>
+                    <li id="contact">Contact</li>
+                    <li id="photography">Bonus: Photography</li>
+                    <li id="gaming">Bonus: Gaming</li>
                 </ul>
             </nav>
 
+            <!--Main Content-->
             <main>
-                <div>
+                <!--Purpose-->
+                <div id="purpose_content">
                     <h2>Purpose of this website</h2>
                     <p>
                         <span class="span1">Hello from Christchurch, New Zealand!</span> 
@@ -48,6 +56,44 @@
                         the tv series <span class="span2">The Magicians</span>, the other being a recreation of the gaming website <span class="span2">VG24/7</span>.
                     </p>
                 </div>
+
+                <!--Course Project Content-->
+                <div id="course_project_content" style="display: none;">
+                    <h2>Course Project</h2>
+                    <p>
+                        <span class="span1">Create a website for Ye Olde Bookshop</span>
+                    </p>
+                    <p>
+                        For the Web Development course, which covered HTML and CSS and a little bit of JQuery, we had to create a full website for a fictional client wanting to create a presence for their 
+                        bookshop. Each of us were also given a different author and a book of theirs to focus on for an author page. 
+                    </p>
+                    <p>
+                        This included repsonive design for all pages for mobile, tablet and dekstop sizes. Another requirement was a hamburger menu for mobile size and the use of only one CSS file.
+                    </p>
+                    <p>
+                        Totaling eight pages in the end it included:
+                        <ul>
+                            <li>Homepage</li>
+                            <li>New Arrivals</li>
+                            <li>Author/Book Page</li>
+                            <li>Valuations Page</li>
+                            <li>Showcase Page including a video</li>
+                            <li>Restorations</li>
+                            <li>About Us</li>
+                            <li>Enquiries</li>
+                        </ul>
+                    </p>
+
+                    <!--Course Project Photos-->
+                    <div id="course_project_content" style="display: none;">
+                        <img class="bookshop_img" src="images/bookshop1.png">
+                        <img class="bookshop_img" src="images/bookshop2.png">
+                        <img class="bookshop_img" src="images/bookshop3.png">
+                        <img class="bookshop_img" src="images/bookshop4.png">
+                    </div>
+                    
+                </div>
+
             </main>
 
             <footer>
