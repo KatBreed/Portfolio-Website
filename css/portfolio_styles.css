@@ -12,11 +12,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 body {
     background-image: url("tekapo2.jpg");
     height: 100%;
-    background-position-y: 2em;
+    /*background-position-y: 2em;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 /*===============================
@@ -49,9 +48,13 @@ ul {
 }
 
 .avatar {
-    border-radius: 60%;
+    border-radius: 50%;
     height: 8em;
     max-width: 100%;
+}
+
+.avatar_div {
+    text-align: center;
 }
 
 .span1 {
@@ -75,12 +78,16 @@ ul {
 }
 
 .bookshop_img_mob {
-    width: 15em;
+    width: 20em;
     max-height: 100%;
 }
 
 .book_container {
     text-align: center;
+}
+
+.bookshop_img_dt, .bookshop_img_mob {
+    cursor: pointer;
 }
 
 /*===============================
@@ -93,6 +100,7 @@ ul {
 
 header, nav {
     padding-left: 3em;
+    padding-right: 3em;
     padding-bottom: 4em;
     padding-top: 2em;
 }
@@ -124,9 +132,9 @@ main {
     margin-bottom: 1.5em;
 }
 
-#course_project_content {
+#course_project_content, #home_projects_content {
     overflow-y: auto;
-    max-height: 830px;
+    max-height: 820px;
 }
 
 /*==========================
@@ -181,10 +189,6 @@ main {
 /*===============================
     MARGINS, PADDING, BORDERS
 ================================*/
-    body {
-        background-position-y: -5em;
-    }
-
     .page_content {
         margin: 5em;
         border: 2px solid #000000;
@@ -208,6 +212,7 @@ main {
     }
 
     main {
-        padding-left: 5em;
+        margin-left: 2em;
+        padding-left: 2em;
     }
 }
