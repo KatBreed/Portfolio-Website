@@ -10,8 +10,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 }
 
 body {
-    background-image: url("tekapo2.jpg");
+    background-image: url("wanaka1.png");
     height: 100%;
+    background-position-x: -50em;
     /*background-position-y: 2em;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,10 +29,17 @@ nav ul > li {
 body {
     line-height: 1.5;
     font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
 }
 
 h1 {
     font-size: 2.5em;
+    font-weight: bold;
+}
+
+/*Contact Content*/
+.email {
+    color:#000000;
     font-weight: bold;
 }
 
@@ -73,12 +81,12 @@ ul {
 
 /*Course Project Content*/
 .bookshop_img_dt {
-    width: 33em;
+    width: 25em;
     max-height: 100%;
 }
 
 .bookshop_img_mob {
-    width: 20em;
+    width: 18em;
     max-height: 100%;
 }
 
@@ -90,12 +98,24 @@ ul {
     cursor: pointer;
 }
 
+/*Contact Content*/
+#email_icon {
+    max-width: 100%;
+    height: 5em;
+}
+
+#email_icon_wrapper {
+    text-align: center;
+}
+
 /*===============================
     MARGINS, PADDING, BORDERS
 ================================*/
 .page_content {
     margin: 2em;
-    border: 2px solid #000000;
+    /*border: 2px solid #000000;*/
+    position: fixed;
+    overflow: hidden;
 }
 
 header, nav {
@@ -111,10 +131,18 @@ nav {
 
 p {
     margin-top: 1em;
+    margin-right: 5em;
 }
 
 main {
-    margin-bottom: 3em;;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 5em;
+}
+
+.copyright {
+    margin-top: 5em;
 }
 
 /*Course Project Content*/
@@ -134,7 +162,7 @@ main {
 
 #course_project_content, #home_projects_content {
     overflow-y: auto;
-    max-height: 820px;
+    max-height: 700px;
 }
 
 /*==========================
@@ -142,6 +170,11 @@ main {
 ============================*/
 /*--- FULL SCREEN - GRID AND FLEX---*/
 @media screen and (min-width: 72rem) {
+    body {
+        background-image: url("tekapo2.jpg");
+        background-position: 0;
+    }
+
     .page_content {
         display: grid;
         grid-template-columns: 1fr 72rem 1fr;
@@ -168,11 +201,6 @@ main {
         grid-row: 2;
     }
 
-    footer {
-        grid-column: 3;
-        grid-row:3
-    }
-
     .book_container {
         display: flex;
         align-items: center;
@@ -191,7 +219,7 @@ main {
 ================================*/
     .page_content {
         margin: 5em;
-        border: 2px solid #000000;
+        /*border: 2px solid #000000;*/
     }
 
     header {
@@ -212,7 +240,13 @@ main {
     }
 
     main {
-        margin-left: 2em;
+        margin-left: 5em;
         padding-left: 2em;
+    }
+
+    footer {
+        margin-top: 2em;
+        margin-right: 4em;
+        margin-bottom: 2em;
     }
 }

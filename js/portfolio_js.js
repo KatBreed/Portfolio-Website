@@ -1,26 +1,39 @@
 //Show and Hide Content
 window.onload = function() {
     // Get references to the navigation items and content divs
+    //Purpose
     const purposeNavItem = document.getElementById('purpose');
     const purposeContent = document.getElementById('purpose_content');
+    //Course Project
     const courseProjectNavItem = document.getElementById('course_project');
     const courseProjectContent = document.getElementById('course_project_content');
+    //Home Projects
     const homeProjectsNavItem = document.getElementById('home_projects');
     const homeProjectsContent = document.getElementById('home_projects_content')
+    //About Me
+    const aboutMeNavItem = document.getElementById('about_me');
+    const aboutMeContent = document.getElementById('about_me_content');
+    //Contact
+    const contactNavItem = document.getElementById('contact');
+    const contactContent = document.getElementById('contact_content')
 
     // Add click event listeners to the navigation items
     purposeNavItem.addEventListener('click', function () {
-        // Show the purpose content and hide the course project content
+        // Show the purpose content and hide the other content
         purposeContent.style.display = 'block';
         courseProjectContent.style.display = 'none';
         homeProjectsContent.style.display = 'none';
+        aboutMeContent.style.display = 'none';
+        contactContent.style.display = 'none';
     });
 
     courseProjectNavItem.addEventListener('click', function () {
-        // Show the course project content and hide the purpose content
+        // Show the course project content and hide the other content
         purposeContent.style.display = 'none';
         courseProjectContent.style.display = 'block';
         homeProjectsContent.style.display = 'none';
+        aboutMeContent.style.display = 'none';
+        contactContent.style.display = 'none';
     });
 
     homeProjectsNavItem.addEventListener('click', function () {
@@ -28,8 +41,27 @@ window.onload = function() {
         purposeContent.style.display = 'none';
         courseProjectContent.style.display = 'none';
         homeProjectsContent.style.display = 'block';
+        aboutMeContent.style.display = 'none';
+        contactContent.style.display = 'none';
     });
-};
+
+    aboutMeNavItem.addEventListener('click', function() {
+        //Show about me content and hide the other content
+        purposeContent.style.display = 'none';
+        courseProjectContent.style.display = 'none';
+        homeProjectsContent.style.display = 'none';
+        aboutMeContent.style.display = 'block';
+        contactContent.style.display = 'none';
+    });
+
+    contactNavItem.addEventListener('click', function () {
+        purposeContent.style.display = 'none';
+        courseProjectContent.style.display = 'none';
+        homeProjectsContent.style.display = 'none';
+        aboutMeContent.style.display = 'none';
+        contactContent.style.display = 'Block';
+    })
+}
 
 
 
