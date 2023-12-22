@@ -10,12 +10,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 }
 
 body {
-    background-image: url("wanaka1.png");
-    height: 100%;
-    background-position-x: -50em;
-    /*background-position-y: 2em;*/
+    background-image: url("tekapo_small_70_cropped.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: -2em;
+    /*background-position-y: 5em;*/
     background-attachment: fixed;
 }
 
@@ -32,8 +31,12 @@ body {
     text-align: justify;
 }
 
+nav {
+    text-align: center;
+}
+
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -48,6 +51,7 @@ h1 {
 ================================*/
 .nav_item {
     cursor: pointer;
+    
 }
 
 ul {
@@ -55,9 +59,13 @@ ul {
     list-style-position: inside;
 }
 
+.nav_item:hover {
+    text-decoration: underline;
+}
+
 .avatar {
     border-radius: 50%;
-    height: 8em;
+    height: 7em;
     max-width: 100%;
 }
 
@@ -81,12 +89,12 @@ ul {
 
 /*Course Project Content*/
 .bookshop_img_dt {
-    width: 25em;
+    width: 18em;
     max-height: 100%;
 }
 
 .bookshop_img_mob {
-    width: 18em;
+    width: 13em;
     max-height: 100%;
 }
 
@@ -113,36 +121,25 @@ ul {
 ================================*/
 .page_content {
     margin: 2em;
-    /*border: 2px solid #000000;*/
-    position: fixed;
-    overflow: hidden;
+    overflow: auto;
+    /*max-height: 350px;*/
 }
 
-header, nav {
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 4em;
-    padding-top: 2em;
+.avatar {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 nav {
-    margin-right: 10em;
+    margin-bottom: 1em;
 }
 
-p {
+h3, h4 {
     margin-top: 1em;
-    margin-right: 5em;
 }
 
-main {
+#course_project_content, #home_projects_content, #about_me_content, #contact_content, #purpose_content {
     margin-bottom: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 5em;
-}
-
-.copyright {
-    margin-top: 5em;
 }
 
 /*Course Project Content*/
@@ -160,9 +157,8 @@ main {
     margin-bottom: 1.5em;
 }
 
-#course_project_content, #home_projects_content {
-    overflow-y: auto;
-    max-height: 700px;
+.copyright {
+    margin-top: 1em;
 }
 
 /*==========================
@@ -171,8 +167,10 @@ main {
 /*--- FULL SCREEN - GRID AND FLEX---*/
 @media screen and (min-width: 72rem) {
     body {
-        background-image: url("tekapo2.jpg");
-        background-position: 0;
+        background-image: url("tekapo_small_70.jpg");
+        background-size: cover;
+        background-position-x: 0;
+        background-position-y: 0;
     }
 
     .page_content {
@@ -208,10 +206,35 @@ main {
     }
 
 /*===============================
+        TYPOGRAPHY
+================================*/
+    body {
+        text-align: justify;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+/*===============================
         STYLING
 ================================*/
     .avatar_div, footer {
         text-align: right;
+    }
+
+    .bookshop_img_dt {
+        width: 25em;
+        max-height: 100%;
+    }
+    
+    .bookshop_img_mob {
+        width: 18em;
+        max-height: 100%;
     }
 
 /*===============================
@@ -226,9 +249,11 @@ main {
         padding-left: 3em;
         padding-bottom: 4em;
         padding-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
     }
 
-    .avatar, footer {
+    .avatar {
         margin-top: 2em;
         margin-right: 4em;
     }
@@ -237,16 +262,24 @@ main {
         padding-left: 5em;
         padding-bottom: 4em;
         padding-top: 1em;
+        margin-right: 10em;
+        margin-left: 2em;
     }
 
     main {
+        margin-right: 2em;
         margin-left: 5em;
-        padding-left: 2em;
+        margin-bottom: 2em;
+        padding: 1em;
     }
 
-    footer {
-        margin-top: 2em;
-        margin-right: 4em;
-        margin-bottom: 2em;
+    p {
+        margin-top: 1em;
+        margin-right: 5em;
+    }
+
+    #course_project_content, #home_projects_content, #about_me_content, #contact_content, #purpose_content {
+        max-height: 700px;
+        overflow: auto
     }
 }
