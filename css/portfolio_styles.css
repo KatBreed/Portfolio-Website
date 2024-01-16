@@ -31,10 +31,6 @@ body {
     text-align: justify;
 }
 
-nav {
-    text-align: center;
-}
-
 h1 {
     font-size: 2em;
     font-weight: bold;
@@ -138,6 +134,10 @@ h3, h4 {
     margin-top: 1em;
 }
 
+p {
+    margin-top: 1em;
+}
+
 #course_project_content, #home_projects_content, #about_me_content, #contact_content, #purpose_content {
     margin-bottom: 2em;
 }
@@ -164,8 +164,88 @@ h3, h4 {
 /*==========================
         RESPONSIVE
 ============================*/
-/*--- FULL SCREEN - GRID AND FLEX---*/
-@media screen and (min-width: 72rem) {
+/*--- MEDIUM LAPTOP SCREEN (and small desktop?)- GRID AND FLEX---*/
+@media screen and (min-width: 44rem) and (max-width: 89.9rem)  {
+    body {
+        background-image: url("tekapo_small_70_cropped2.jpg");
+        background-size: cover;
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+
+    .page_content {
+        display: grid;
+        grid-template-columns: 1fr 44rem 1fr;
+        column-gap: 1em;
+    }
+
+    header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .avatar_div {
+        grid-column: 3;
+        grid-row: 1
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main {
+        grid-column: 2;
+        grid-row: 2;
+    } 
+
+/*===============================
+    Styling
+================================*/ 
+    .avatar {
+        border-radius: 50%;
+        height: 6em;
+        max-width: 100%;
+    }
+
+/*===============================
+    Typography
+================================*/ 
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+/*===============================
+    MARGINS, PADDING, BORDERS
+================================*/
+    body {
+        margin: 2em;
+        overflow: auto;
+    }
+
+    nav {
+        margin-top: 3em;
+    }
+
+    main {
+        margin-left: 3em;
+        overflow: auto;
+        max-height: 420px;
+    }
+
+    .book_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+/*--- FULL SCREEN (Ultra WIde Desktop?)- GRID AND FLEX---*/
+@media screen and (min-width: 90rem) {
     body {
         background-image: url("tekapo_small_70.jpg");
         background-size: cover;
