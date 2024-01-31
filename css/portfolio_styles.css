@@ -42,12 +42,15 @@ h1 {
     font-weight: bold;
 }
 
+#nav_photo_link {
+    text-align: left;
+}
+
 /*===============================
         STYLING
 ================================*/
 .nav_item {
     cursor: pointer;
-    
 }
 
 ul {
@@ -55,7 +58,7 @@ ul {
     list-style-position: inside;
 }
 
-.nav_item:hover {
+.nav_item:hover, .photo_link:hover, #nav_photo_link:hover {
     text-decoration: underline;
 }
 
@@ -81,6 +84,25 @@ ul {
 .copyright {
     font-weight: bold;
     font-size: 1.2em;
+}
+
+.photo_link, #nav_photo_link {
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#camera {
+    max-width: 100%;
+    height: 3em;
+}
+
+.photo_subdomain {
+    display: flex;
+    align-items: center;
+    justify-content: left ;
 }
 
 /*Course Project Content*/
@@ -128,6 +150,14 @@ ul {
 
 nav {
     margin-bottom: 1em;
+}
+
+#nav_list {
+    margin-bottom: 2em;
+}
+
+#nav_photo_link {
+    margin-left: 1em;
 }
 
 h3, h4 {
@@ -206,6 +236,11 @@ p {
         border-radius: 50%;
         height: 6em;
         max-width: 100%;
+    }
+
+    #camera {
+        max-width: 100%;
+        height: 3em;
     }
 
 /*===============================
@@ -315,6 +350,11 @@ p {
     .bookshop_img_mob {
         width: 18em;
         max-height: 100%;
+    }
+
+    #camera {
+        max-width: 100%;
+        height: 3em;
     }
 
 /*===============================
