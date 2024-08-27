@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
         <title>Katherine Breed</title>
-        <link rel="stylesheet" href="css/portfolio_styles.css">
+        <link rel="stylesheet" href="css/portfolio_styles2.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <script src="js/portfolio_js.js"></script>
+        <!--<script src="js/portfolio_js.js"></script>-->
     </head>
 
     <!--Google Analytics-->
@@ -26,25 +26,11 @@
         <div class="page_content">
             <!--Title Header-->
             <header>
+                <div>
                     <h1>Katherine Breed</h1>
                     <h4>Retail Customer Service</h4>
                     <h4>Studying for L5 Diploma in Web Development</h4>
-            </header>
-
-            <!--Avatar Pic-->
-            <div class="avatar_div">
-                <img class="avatar" src="images/avatar.jpg">
-            </div>
-
-            <!--Navigation Links-->
-            <nav>
-                <ul id="nav_list">
-                    <li class="nav_item" id="purpose">Purpose</li>
-                    <li class="nav_item" id="course_project">Course Project</li>
-                    <li class="nav_item" id="home_projects">At Home Projects</li>
-                    <li class="nav_item" id="about_me">About Me</li>
-                    <li class="nav_item" id="contact">Contact</li>
-                </ul>
+                </div>
 
                 <!--External Links-->
                 <div class="external_links">
@@ -64,8 +50,24 @@
                             <p class="ext_link_text">GitHub</p>
                         </a>
                     </div>
-
                 </div>
+
+            </header>
+
+            <!--Avatar Pic-->
+            <div class="avatar_div">
+                <img class="avatar" src="images/avatar.jpg">
+            </div>
+
+            <!--Navigation Links-->
+            <nav>
+                <ul id="nav_list">
+                    <a><li class="nav_item" id="purpose" href="index.html">Home</li></a>
+                    <a><li class="nav_item" id="course_project" href="course_projects.html">Course Projects</li></a>
+                    <li class="nav_item" id="home_projects">At Home Projects</li>
+                    <li class="nav_item" id="about_me">About Me</li>
+                    <li class="nav_item" id="contact">Contact</li>
+                </ul>
             </nav>
 
             <!--Main Content-->
@@ -99,60 +101,13 @@
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>Repsonive Design across mobile, laptop, and desktop</li>
+                            <li>Reponsive Design across mobile, laptop, and desktop</li>
                             <li>Javascript</li>
                             <li>Python</li>
                             <li>Git with Fork</li>
                             <li>WordPress</li>
                         </ul>
                     </p>
-                </div>
-
-                <!--Course Project Content-->
-                <div id="course_project_content" style="display: none;">
-                    
-                    <div class="title">
-                        <h2>Course Project</h2>
-                    </div>
-                    
-                    <p>
-                        <h3>Create a website for Ye Olde Bookshop</h3>
-                    </p>
-                    
-                    <div style="display: block">
-                        <p>
-                            For the Web Development course, which covered HTML and CSS and a little bit of JQuery, we had to create a full website for a fictional client wanting to create 
-                            a presence for their bookshop. Each of us were also given a different author and a book of theirs to focus on for an author page. 
-                        </p>
-                        <p>
-                            This included repsonive design for all pages for mobile, tablet and dekstop sizes. Another requirement was a hamburger menu for mobile size and the use of 
-                            only one CSS file.
-                        </p>
-                    </div>
-
-                    <!--Course Project Photos-->
-                    <p>
-                        <h4>Desktop Size</h4>
-                    </p>
-                    <div class="book_container">
-                        <img class="bookshop_img_dt" src="images/bookshop1.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_dt" src="images/bookshop5.png" onclick="enlargeImage(this)">
-                    </div>
-
-                    <div class="book_container">
-                        <img class="bookshop_img_dt" src="images/bookshop4.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_dt" src="images/bookshop6.png" onclick="enlargeImage(this)">
-                    </div>
-
-                    <p>
-                        <h4>Mobile Size</h4>
-                    </p>
-                    <div class="book_container">
-                        <!--<img class="bookshop_img_mob" src="images/bookshop2.png" onclick="enlargeImage(this)">-->
-                        <img class="bookshop_img_mob" src="images/bookshop3.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_mob" src="images/bookshop7.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_mob" src="images/bookshop8.png" onclick="enlargeImage(this)">
-                    </div>
                 </div>
 
                 <!--At Home Projects-->

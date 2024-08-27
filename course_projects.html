@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
+        <title>Katherine Breed</title>
+        <link rel="stylesheet" href="css/portfolio_styles2.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="js/portfolio_js.js" defer></script>
+    </head>
+
+    <!--Google Analytics-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K5J5MLRDJJ');
+    </script>
+
+    <body>
+        <!--Page Wrapper-->
+        <div class="page_content">
+            <!--Title Header-->
+            <header>
+                <!--Avatar Pic-->
+                <div class="avatar_div">
+                    <img class="avatar" src="images/avatar.jpg">
+                </div>
+                
+                <div>
+                    <h1>Katherine Breed</h1>
+                    <h4>Retail Customer Service</h4>
+                    <h4>Studying for L5 Diploma in Web Development</h4>
+                </div>
+
+                <!--External Links-->
+                <div class="external_links">
+
+                    <!--External Links - WordPress Photo Journal Subdomain-->
+                    <div class="ext_link_div">
+                        <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
+                            <img class="ext_link_img" src="images/camera.png">
+                            <p class="ext_link_text">WP Photo Journal</p>
+                        </a>
+                    </div>
+
+                    <!--External Links - GitHub-->
+                    <div class="ext_link_div" id="github_div">
+                        <a class="ext_link" href="https://github.com/KatBreed">
+                            <img class="ext_link_img" src="images/github-mark/github-mark.png">
+                            <p class="ext_link_text">GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+             <!--Navigation Links-->
+             <nav>
+                <ul id="nav_list">
+                    <li class="nav_item" id="purpose"><a href="index2.html">Home</a></li>
+                    <li class="nav_item" id="course_project"><a href="course_projects.html">Course Projects</a></li>
+                    <li class="nav_item" id="course_project"><a href="home_projects.html">At Home Projects</a></li>
+                    <li class="nav_item" id="course_project"><a href="about_me.html">About Me</a></li>
+                    <li class="nav_item" id="course_project"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Course Project Content-->
+            <main>
+                <div id="course_project_content">
+                        
+                    <div class="title">
+                        <h2>Course projects</h2>
+                    </div>
+                    
+                    <p>
+                        <h3>Create a website for Ye Olde Bookshop</h3>
+                    </p>
+                    
+                    <div>
+                        <p>
+                            For the Web Development course, which covered HTML and CSS and a little bit of JQuery, we had to create a full website for a fictional client wanting to create 
+                            a presence for their bookshop. Each of us were also given a different author and a book of theirs to focus on for an author page. 
+                        </p>
+                        <p>
+                            This included repsonive design for all pages for mobile, tablet and dekstop sizes. Another requirement was a hamburger menu for mobile size and the use of 
+                            only one CSS file.
+                        </p>
+                    </div>
+
+                    <!--Course Project Photos-->
+                    <p>
+                        <h4>Desktop Size</h4>
+                    </p>
+                    <div class="book_container">
+                        <img class="bookshop_img_dt" src="images/bookshop1.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_dt" src="images/bookshop5.png" onclick="enlargeImage(this)">
+                    </div>
+
+                    <div class="book_container">
+                        <img class="bookshop_img_dt" src="images/bookshop4.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_dt" src="images/bookshop6.png" onclick="enlargeImage(this)">
+                    </div>
+
+                    <p>
+                        <h4>Mobile Size</h4>
+                    </p>
+                    <div class="book_container">
+                        <!--<img class="bookshop_img_mob" src="images/bookshop2.png" onclick="enlargeImage(this)">-->
+                        <img class="bookshop_img_mob" src="images/bookshop3.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_mob" src="images/bookshop7.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_mob" src="images/bookshop8.png" onclick="enlargeImage(this)">
+                    </div>
+                </main>
+            </div>
+
+            <footer>
+                <p>Website by Katherine Breed</p>
+                <p>&copy;2024</p>
+            </footer>
+
+        </div>    
+    </body>
+</html>

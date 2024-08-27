@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
+        <title>Katherine Breed</title>
+        <link rel="stylesheet" href="css/portfolio_styles2.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="js/portfolio_js.js" defer></script>
+    </head>
+
+    <!--Google Analytics-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K5J5MLRDJJ');
+    </script>
+
+    <body>
+        <!--Page Wrapper-->
+        <div class="page_content">
+            <!--Title Header-->
+            <header>
+                <!--Avatar Pic-->
+                <div class="avatar_div">
+                    <img class="avatar" src="images/avatar.jpg">
+                </div>
+                
+                <div>
+                    <h1>Katherine Breed</h1>
+                    <h4>Retail Customer Service</h4>
+                    <h4>Studying for L5 Diploma in Web Development</h4>
+                </div>
+
+                <!--External Links-->
+                <div class="external_links">
+
+                    <!--External Links - WordPress Photo Journal Subdomain-->
+                    <div class="ext_link_div">
+                        <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
+                            <img class="ext_link_img" src="images/camera.png">
+                            <p class="ext_link_text">WP Photo Journal</p>
+                        </a>
+                    </div>
+
+                    <!--External Links - GitHub-->
+                    <div class="ext_link_div" id="github_div">
+                        <a class="ext_link" href="https://github.com/KatBreed">
+                            <img class="ext_link_img" src="images/github-mark/github-mark.png">
+                            <p class="ext_link_text">GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+             <!--Navigation Links-->
+             <nav>
+                <ul id="nav_list">
+                    <li class="nav_item" id="purpose"><a href="index2.html">Home</a></li>
+                    <li class="nav_item" id="course_project"><a href="course_projects.html">Course Projects</a></li>
+                    <li class="nav_item" id="course_project"><a href="home_projects.html">At Home Projects</a></li>
+                    <li class="nav_item" id="course_project"><a href="about_me.html">About Me</a></li>
+                    <li class="nav_item" id="course_project"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Course Project Content-->
+            <main>
+                <!--At Home Projects-->
+                <div id="home_projects_content">
+                    
+                    <div class="title">
+                        <h2>At Home Projects</h2>
+                        <h3>The Magicians Fansite and VG24/7 Mockup</h3>
+                    </div>
+                    
+                    <!--The Magicians Project-->
+                    <p>
+                        <h3>The Magicians Fansite</h3>
+                    </p>
+                    
+                    <div style="display: block">
+                        <p>
+                            I got into watching the tv series The Magicians and so ended up having a go at a fansite. The design of which was made on the fly. I wanted to take what 
+                            I had learnt and apply it.
+                        </p>
+                        <p>
+                            A good chunck of this project has been done but currently goes unfinished I put aimed to make pages for the actors, the characters, 
+                            and episode descriptions for each season.
+                        </p>
+                    </div>
+
+
+                    <!--The Magicians Photos-->
+                    <p>
+                        <h4>The Magicicans Desktop Size</h4>
+                    </p>
+                    <div class="book_container">
+                        <img class="bookshop_img_dt" src="images/magicians1.png">
+                        <img class="bookshop_img_dt" src="images/magicians2.png">
+                    </div>
+
+                    <div class="book_container">
+                        <img class="bookshop_img_dt" src="images/magicians3.png">
+                    </div>
+
+                    <p>
+                        <h4>The Magicians Mobile Size</h4>
+                    </p>
+                    <div class="book_container">
+                        <img class="bookshop_img_mob" src="images/magicians4.png">
+                        <img class="bookshop_img_mob" src="images/magicians5.png">
+                    </div>
+
+                   <!--VG24/7 Mockup-->                    
+                    <p>
+                        <h3>VG24/7 Mockup</h3>
+                    </p>
+                    
+                    <div>
+                        <p>
+                            With a break in classes over Christmas and New Year's I got my hands back on Web Development and decided to make a mockup of the real website VG24/7 as full as I can, and branch 
+                            out into Javascript. It's a slightly different experience building something that is already desgined.
+                        </p>
+                    </div>
+
+
+                    <!--VG24/7 Photos-->
+                    <p>
+                        <h4>VG24/7 Desktop Size<h4>
+                    </p>
+                    <div class="book_container">
+                        <img class="bookshop_img_dt" src="images/vg2473.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_dt" src="images/vg2472.png" onclick="enlargeImage(this)">
+                    </div>
+
+                    <div class="book_container">
+                        <img class="bookshop_img_dt" src="images/vg2471.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_dt" src="images/vg2477.png" onclick="enlargeImage(this)">
+                        
+                    </div>
+
+                    <p>
+                        <h4>VG24/7 Mobile Size</h4>
+                    </p>
+                    <div class="book_container">
+                        <img class="bookshop_img_mob" src="images/vg2475.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_mob" src="images/vg2476.png" onclick="enlargeImage(this)">
+                        <img class="bookshop_img_mob" src="images/vg2474.png" onclick="enlargeImage(this)">
+                    </div>
+                </div>
+            </main>
+            </div>
+
+            <footer>
+                <p>Website by Katherine Breed</p>
+                <p>&copy;2024</p>
+            </footer>
+
+        </div>   
+    </body>
+</html>
