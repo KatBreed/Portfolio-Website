@@ -9,15 +9,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
     box-sizing: border-box;
 }
 
-body {
-    /*background-image: url("tekapo_small_70_cropped.jpg");*/
-    background-color: #67c1db;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -2em;
-    /*background-position-y: 5em;*/
-    background-attachment: fixed;
-}
+/*========================
+    BASE MOBILE SIZE
+=========================*/
+
 
 /*===============================
         TYPOGRAPHY
@@ -32,45 +27,101 @@ body {
     text-align: justify;
 }
 
+header {
+    text-align: center;
+}
+
 h1 {
     font-size: 2em;
     font-weight: bold;
-}
-
-/*Contact Content*/
-.email {
-    color:#000000;
-    font-weight: bold;
-}
-
-/*===============================
-        STYLING
-================================*/
-header, nav, .avatar_div {
-    background-color: darkcyan;
-}
-
-.nav_item {
-    cursor: pointer;
-}
-
-ul {
-    list-style-type: lower-greek;
-    list-style-position: inside;
-}
-
-.nav_item:hover, .ext_link:hover {
-    text-decoration: underline;
-}
-
-.avatar {
-    border-radius: 50%;
-    height: 7em;
-    max-width: 100%;
+    text-align: center;
 }
 
 .avatar_div {
     text-align: center;
+}
+
+nav {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.card {
+    text-align: center;
+}
+
+.card_header {
+    font-size: 1.5em;
+}
+
+.hero_text {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Contact Content*/
+.email {
+    color:#383636;
+    font-weight: bold;
+}
+
+/*===============================
+    STYLING AND COLOUR
+================================*/
+body {
+    background-color: #e4e9ee;
+    color: #383636;
+}
+
+header, footer {
+    background-color: #417a86;
+}
+
+h1, h2, h3 {
+    color: #000000;
+}
+
+nav {
+    background-color: #5299A8;
+}
+
+.nav_item {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#nav_list .nav_item a {
+    color: #383636;;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#nav_list .nav_item a:hover {
+    background-color: #417a86;
+}
+
+.ext_link:hover {
+    text-decoration: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 5em;
+    max-width: 100%;
 }
 
 .span1 {
@@ -80,6 +131,14 @@ ul {
 
 .span2 {
     font-style: italic;
+}
+
+.card {
+    background-color: #ffffff
+}
+
+.card_header {
+    color: #157da3;
 }
 
 .copyright {
@@ -97,7 +156,7 @@ ul {
 
 .ext_link_img {
     max-width: 100%;
-    height: 3em;
+    height: 2em;
 }
 
 .external_links {
@@ -112,6 +171,32 @@ ul {
     flex-direction: row;
 }
 
+.card_img {
+    width: 4em;
+    max-height: 100%;
+}
+
+#responsive_img {
+    width: 7em;
+    max-height: 100%;
+}
+
+.large_card_wrapper {
+    background-color: #c4d0db;
+}
+
+.hero_card1, .hero_card2 {
+    text-align: center;
+}
+
+.hero_text {
+    color: #165f79;
+}
+
+.hero_img {
+    height: 12em;
+    max-width: 100%;
+}
 
 /*Course Project Content*/
 .bookshop_img_dt {
@@ -145,30 +230,21 @@ ul {
 /*===============================
     MARGINS, PADDING, BORDERS
 ================================*/
-.page_content {
-    margin: 2em;
-    overflow: auto;
-    /*max-height: 350px;*/
-}
-
-.avatar {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
 nav {
-    margin-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-#nav_list {
-    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 header {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 2em;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
 }
 
 h3, h4 {
@@ -179,8 +255,23 @@ p {
     margin-top: 1em;
 }
 
-#course_project_content, #home_projects_content, #about_me_content, #contact_content, #purpose_content {
-    margin-bottom: 2em;
+.card {
+    height: 8em;
+    box-shadow: 4px 4px #888888;
+}
+
+.large_card_wrapper {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.hero_card1, .hero_card2 {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+.hero_text {
+    margin-bottom: 1.2em;
 }
 
 .ext_link_img {
@@ -193,13 +284,16 @@ p {
 }
 
 .ext_link_div {
-    margin-top: .5em;
-    
+    margin-top: 2em;
 }
 
 #github_div {
     margin-top: 1.2em;
     margin-bottom: .5em;
+}
+
+footer {
+    padding-bottom: 1em;
 }
 
 /*Course Project Content*/
@@ -224,82 +318,56 @@ p {
 /*==========================
         RESPONSIVE
 ============================*/
-/*--- MEDIUM LAPTOP SCREEN (and small desktop?)- GRID AND FLEX---*/
-@media screen and (min-width: 44rem) and (max-width: 89.9rem)  {
+/*--- LAPTOP SCREEN - GRID AND FLEX---*/
+@media screen and (min-width: 62rem)  {
     body {
-        /*background-image: url("tekapo_small_70_cropped2.jpg");*/
-        background-size: cover;
-        background-position-x: 0;
-        background-position-y: 0;
-    }
-
-    .page_content {
         display: grid;
-        grid-template-columns: 1fr 44rem 1fr;
-        column-gap: 1em;
+        grid-template-columns: 1fr 62rem 1fr;
     }
 
     header {
-        grid-column: 1;
+        grid-column: 1 / 4;
         grid-row: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
-    .avatar_div {
-        grid-column: 3;
-        grid-row: 1
-    }
-
-    nav {
-        grid-column: 1;
+    #nav_list {
+        grid-column: 1 / 4;
         grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     main {
-        grid-column: 2;
-        grid-row: 2;
+        grid-column: 2 / 3;
+        grid-row: 3;
     } 
 
-/*===============================
-    Styling
-================================*/ 
-    .avatar {
-        border-radius: 50%;
-        height: 6em;
-        max-width: 100%;
+    .card_wrap1, .card_wrap2, .card_wrap3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    .ext_link_img {
-        max-width: 100%;
-        height: 3em;
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-/*===============================
-    Typography
-================================*/ 
-    h1 {
-        font-size: 1.5em;
+    .hero_card1, .hero_card2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    h2 {
-        font-size: 1.3em;
-    }
-
-/*===============================
-    MARGINS, PADDING, BORDERS
-================================*/
-    body {
-        margin: 2em;
-        overflow: auto;
-    }
-
-    nav {
-        margin-top: 3em;
-    }
-
-    main {
-        margin-left: 3em;
-        overflow: auto;
-        max-height: 420px;
+    .large_card_wrapper {
+        grid-column: 1 / 4;
+        grid-row: 4;
     }
 
     .book_container {
@@ -307,41 +375,127 @@ p {
         align-items: center;
         justify-content: space-evenly;
     }
-}
 
-/*--- FULL SCREEN (Ultra Wide Desktop?)- GRID AND FLEX---*/
-@media screen and (min-width: 90rem) {
-    body {
-        /*background-image: url("tekapo_small_70.jpg");*/
-        background-size: cover;
-        background-position-x: 0;
-        background-position-y: 0;
+    footer {
+        grid-column: 1 / 4;
+        grid-row: 5;
+        align-items: flex-end;
+        justify-content: center;
     }
 
-    .page_content {
+/*===============================
+    Styling
+================================*/ 
+    .avatar {
+        height: 5em;
+        max-width: 100%;
+    }
+
+    .card {
+        height: 20em;
+        width: 20em;
+    }
+
+    .card_img {
+        max-width: 100%;
+        height: 5em;
+    }
+
+    .hero_img {
+        height: 25em;
+        max-width: 100%;
+    }
+
+    .ext_link_img {
+        max-width: 100%;
+        height: 2em;
+    }
+
+/*===============================
+    Typography
+================================*/ 
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+/*===============================
+    MARGINS, PADDING, BORDERS
+================================*/
+    #nav_list .nav_item a {
+        padding: 1em;
+    }
+
+    main {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .card_wrap1, .card_wrap2, .card_wrap3 {
+        margin-top: 4em;
+        margin-bottom: 2em;
+    }
+
+    .card_img {
+        margin-top: 2em;
+    }
+
+   .large_card_wrapper {
+        margin-top: 1em;
+        padding-top: .5em;
+        padding-bottom: 3em;
+   }
+
+   .hero_card1, .hero_card2 {
+        margin-top: 3em;
+   }
+
+   .hero_img {
+        margin-left: 10em;
+        margin-right: 10em;
+   }
+
+   .hero_text {
+        width: 10em;
+   }
+
+    footer {
+        padding-right: 2em;
+    }
+}
+
+/*--- FULL SCREEN STANDARD DESKTOP- GRID AND FLEX---*/
+@media screen and (min-width: 85rem) {
+    body {
         display: grid;
-        grid-template-columns: 1fr 72rem 1fr;
-        column-gap: 5em;
+        grid-template-columns: 1fr 85rem 1fr;
     }
 
     header {
-        grid-column: 1;
+        grid-column: 1 / 4;
         grid-row: 1;
     }
 
-    .avatar_div {
-        grid-column: 3;
-        grid-row: 1
-    }
-
     nav {
-        grid-column: 1;
+        grid-column: 1 / 4;
         grid-row: 2;
     }
 
     main {
-        grid-column: 2;
-        grid-row: 2;
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+    .large_card_wrapper {
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+
+    footer {
+        grid-column: 1 / 4;
+        grid-row: 5;
     }
 
     .book_container {
@@ -368,8 +522,9 @@ p {
 /*===============================
         STYLING
 ================================*/
-    .avatar_div, footer {
-        text-align: right;
+    .avatar {
+        height: 7em;
+        max-width: 100%;
     }
 
     .bookshop_img_dt {
@@ -387,53 +542,20 @@ p {
         height: 3em;
     }
 
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #nav_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
 /*===============================
     MARGINS, PADDING, BORDERS
 ================================*/
-    .page_content {
-        margin: 5em;
-        /*border: 2px solid #000000;*/
-    }
 
-    header {
-        padding-left: 3em;
-        padding-bottom: 4em;
-        padding-top: 2em;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-
-    .avatar {
-        margin-top: 2em;
-        margin-right: 4em;
-    }
-
-    .avatar_div {
-        background-color: transparent;
-    }
-
-    nav {
-        padding-left: 5em;
-        padding-bottom: 4em;
-        padding-top: 1em;
-        margin-right: 2em;
-        margin-left: 2em;
-    }
-
-    main {
-        margin-right: 2em;
-        margin-left: 5em;
-        margin-bottom: 2em;
-        padding: 1em;
-    }
-
-    p {
-        margin-top: 1em;
-        margin-right: 5em;
-    }
-
-    #course_project_content, #home_projects_content, #about_me_content, #contact_content, #purpose_content {
-        max-height: 700px;
-        overflow: auto
-    }
 }

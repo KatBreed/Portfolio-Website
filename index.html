@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
         <title>Katherine Breed</title>
-        <link rel="stylesheet" href="css/portfolio_styles2.css">
+        <link rel="stylesheet" href="css/portfolio_styles.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <!--<script src="js/portfolio_js.js"></script>-->
+        <script src="js/portfolio_js.js" defer></script>
     </head>
 
     <!--Google Analytics-->
@@ -22,228 +22,130 @@
     </script>
 
     <body>
-        <!--Page Wrapper-->
-        <div class="page_content">
-            <!--Title Header-->
-            <header>
-                <div>
-                    <h1>Katherine Breed</h1>
-                    <h4>Retail Customer Service</h4>
-                    <h4>Studying for L5 Diploma in Web Development</h4>
-                </div>
-
-                <!--External Links-->
-                <div class="external_links">
-
-                    <!--External Links - WordPress Photo Journal Subdomain-->
-                    <div class="ext_link_div">
-                        <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
-                            <img class="ext_link_img" src="images/camera.png">
-                            <p class="ext_link_text">My WordPress Photography Journal</p>
-                        </a>
-                    </div>
-
-                    <!--External Links - GitHub-->
-                    <div class="ext_link_div" id="github_div">
-                        <a class="ext_link" href="https://github.com/KatBreed">
-                            <img class="ext_link_img" src="images/github-mark/github-mark.png">
-                            <p class="ext_link_text">GitHub</p>
-                        </a>
-                    </div>
-                </div>
-
-            </header>
-
+        <!--Title Header-->
+        <header>
             <!--Avatar Pic-->
             <div class="avatar_div">
                 <img class="avatar" src="images/avatar.jpg">
             </div>
 
-            <!--Navigation Links-->
-            <nav>
-                <ul id="nav_list">
-                    <a><li class="nav_item" id="purpose" href="index.html">Home</li></a>
-                    <a><li class="nav_item" id="course_project" href="course_projects.html">Course Projects</li></a>
-                    <li class="nav_item" id="home_projects">At Home Projects</li>
-                    <li class="nav_item" id="about_me">About Me</li>
-                    <li class="nav_item" id="contact">Contact</li>
-                </ul>
-            </nav>
+            <!--Title-->
+            <div>
+                <h1>Katherine Breed</h1>
+                <h2>Practice as my first live website!</h2>
+                <h3>Retail Customer Service / Studying for L5 Diploma in Web Development</h4>
+            </div>
 
-            <!--Main Content-->
-            <main>
-                <!--Purpose-->
-                <div id="purpose_content">
-                    <div class="title">
-                        <h2>Purpose of this website</h2>
-                    </div>
-                    
-                    <p>
-                        <span class="span1">Hello from Christchurch, New Zealand!</span> 
-                    </p>
-                    <p>
-                        This website is a bit of project in itself as I learn more Web Development. It is also to start gaining a bit of a presence and showcase my skills.
-                    </p>
-                    <p>
-                        I'm currently working in retail at the Christchurch Airport while studying for a L5 Diploma in Web Development at Ara. You can more on some of the projects I have 
-                        done for the course and at home.
-                    </p>
-                    <p>
-                        Currently my knowledge includes HTML5, CSS, I have learnt Python for the diploma and am just starting to branch that out to include Javascript. As evidenced 
-                        by this website. I have also incorporated Git with Fork. I am also into a bit of photography and put together a photography journal on WordPress as a subdomain 
-                        of this site which you can find here <a class="photo_link" href="https://photojournal.katherinebreed.co.nz">HERE</a>
-                    </p>
+            <!--External Links-->
+            <div class="external_links">
 
-                    <p>
-                        <h2>
-                            Skills I can bring
-                        </h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Reponsive Design across mobile, laptop, and desktop</li>
-                            <li>Javascript</li>
-                            <li>Python</li>
-                            <li>Git with Fork</li>
-                            <li>WordPress</li>
-                        </ul>
-                    </p>
+                <!--External Links - WordPress Photo Journal Subdomain-->
+                <div class="ext_link_div">
+                    <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
+                        <img class="ext_link_img" src="images/camera.png">
+                        <p class="ext_link_text">WP Photo Journal</p>
+                    </a>
                 </div>
 
-                <!--At Home Projects-->
-                <div id="home_projects_content" style="display: none;">
-                    
-                    <div class="title">
-                        <h2>At Home Projects</h2>
-                        <h3>The Magicians Fansite and VG24/7 Mockup</h3>
-                    </div>
-                    
-                    <!--The Magicians Project-->
-                    <p>
-                        <h3>The Magicians Fansite</h3>
-                    </p>
-                    
-                    <div style="display: block">
-                        <p>
-                            I got into watching the tv series The Magicians and so ended up having a go at a fansite. The design of which was made on the fly. I wanted to take what 
-                            I had learnt and apply it.
-                        </p>
-                        <p>
-                            A good chunck of this project has been done but currently goes unfinished I put aimed to make pages for the actors, the characters, 
-                            and episode descriptions for each season.
-                        </p>
-                    </div>
+                <!--External Links - GitHub-->
+                <div class="ext_link_div" id="github_div">
+                    <a class="ext_link" href="https://github.com/KatBreed">
+                        <img class="ext_link_img" src="images/github-mark/github-mark.png">
+                        <p class="ext_link_text">GitHub</p>
+                    </a>
+                </div>                 
+            </div>
+        </header>
 
+        <!--Navigation Links-->
+        <nav>
+            <ul id="nav_list">
+                <li class="nav_item"><a href="index2.html">Home</a></li>
+                <li class="nav_item"><a href="course_projects.html">Course Projects</a></li>
+                <li class="nav_item"><a href="home_projects.html">At Home Projects</a></li>
+                <li class="nav_item"><a href="about_me.html">About Me</a></li>
+                <li class="nav_item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-                    <!--The Magicians Photos-->
-                    <p>
-                        <h4>The Magicicans Desktop Size</h4>
-                    </p>
-                    <div class="book_container">
-                        <img class="bookshop_img_dt" src="images/magicians1.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_dt" src="images/magicians2.png" onclick="enlargeImage(this)">
-                    </div>
+        <!--Main Content-->
+        <main>
+            <div class="title">
+                <h3>Hello from Christchurch, New Zealand!</h3>
+            </div>
+                
+            <div>
+                <p>
+                    This website is a bit of project in itself as I learn more Web Development and is my first live website. I have made a full non-live website for a course and will 
+                    make another live website to finish out my study in 2024. It is also to start gaining a bit of a presence and showcase my skills.
+                </p>
+            </div>
 
-                    <div class="book_container">
-                        <img class="bookshop_img_dt" src="images/magicians3.png" onclick="enlargeImage(this)">
-                    </div>
+            <div class="card_skills_wrapper">
 
-                    <p>
-                        <h4>The Magicians Mobile Size</h4>
-                    </p>
-                    <div class="book_container">
-                        <img class="bookshop_img_mob" src="images/magicians4.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_mob" src="images/magicians5.png" onclick="enlargeImage(this)">
+                <!--Card Wrap 1-->
+                <div class="card_wrap1">
+                    <div class="card">
+                        <h3 class="card_header">HTML</h3>
+                        <img class="card_img" src="images/html_icon2.png">
                     </div>
 
-                   <!--VG24/7 Mockup-->                    
-                    <p>
-                        <h3>VG24/7 Mockup</h3>
-                    </p>
-                    
-                    <div style="display: block">
-                        <p>
-                            With a break in classes over Christmas and New Year's I got my hands back on Web Development and decided to make a mockup of the real website VG24/7 as full as I can, and branch 
-                            out into Javascript. It's a slightly different experience building something that is already desgined.
-                        </p>
+                    <div class="card">
+                        <h3 class="card_header">CSS</h3>
+                        <img class="card_img" src="images/css_icon.png">
                     </div>
 
-
-                    <!--VG24/7 Photos-->
-                    <p>
-                        <h4>VG24/7 Desktop Size<h4>
-                    </p>
-                    <div class="book_container">
-                        <img class="bookshop_img_dt" src="images/vg2473.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_dt" src="images/vg2472.png" onclick="enlargeImage(this)">
-                    </div>
-
-                    <div class="book_container">
-                        <img class="bookshop_img_dt" src="images/vg2471.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_dt" src="images/vg2477.png" onclick="enlargeImage(this)">
-                        
-                    </div>
-
-                    <p>
-                        <h4>VG24/7 Mobile Size</h4>
-                    </p>
-                    <div class="book_container">
-                        <img class="bookshop_img_mob" src="images/vg2475.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_mob" src="images/vg2476.png" onclick="enlargeImage(this)">
-                        <img class="bookshop_img_mob" src="images/vg2474.png" onclick="enlargeImage(this)">
+                    <div class="card">
+                        <h3 class="card_header">Javascript</h3>
+                        <img class="card_img" src="images/js_icon.png">
                     </div>
                 </div>
 
-                <!--About Me Content-->
-                <div id="about_me_content" style="display: none;">
-                    <div class="title">
-                        <h2>About Me</h2>
+                <!--Card Wrap 2-->
+                <div class="card_wrap2">
+                    <div class="card">
+                        <h3 class="card_header">Python</h3>
+                        <img class="card_img" src="images/python_icon.png">
                     </div>
-                    <p>
-                        I grew up a child of the 80's in Morrinsville, New Zealand. I was always running around until I 
-                        discovered the likes of Sonic and Mario. I have memories of Atari, 20c arcades at the fish 'n' chips shop 
-                        and computers becoming a thing with Windows '95, DOS, and big floppy disks. I then moved and lived in 
-                        Whangarei, New Zealand for about 12 years before moving here to Christchurch in 2019.
-                    </p>
-                    <p> 
-                        I also grew up around horses as my Dad was a Harness Racing Trainer with pacers and 
-                        the odd trotter. But I have always been bit of a pop culture, gaming, computer, geek.
-                    </p>
-                    <p>
-                        I still game from time to time depending on how busy I am. I'm currently enjoying some Baldur's Gate 3 and Monster Hunter Rise. I also enjoy going for walks or 
-                        extended walks. During the pandemic I got into running which still comes and goes in phases depending on how busy I am. 
-                    </p>
-                    <p>
-                        I used to be into a bit of filming and video editing for youtube and purchased a Panasonic G7 camera, however that is now primarily used for photography 
-                        from time to time.I have a bit of a hearing loss for which I wear hearing aids.
-                    </p>
-                </div>
-
-                <!--Contact Content-->
-                <div id="contact_content" style="display: none;">
-                    <div class="title">
-                        <h2>Contact</h2>
-                    </div> 
-                    <div id="email_icon_wrapper">
-                        <img id="email_icon" src="images/email_icon_red.png">
+                
+                    <div class="card">
+                        <h3 class="card_header">WordPress</h3>
+                        <img class="card_img" src="images/wordpress_icon.png">
                     </div>
-                    <p>
-                        If you would like to contact me I can be reached via email at <a class="email" href="mailto:ksbreed@gmail.com">ksbreed@gmail.com</a>
-                    </p>
-                    <div class="copyright">
-                        <h4>Copyright</h4>
+
+                    <div class="card">
+                        <h3 class="card_header">Responsive Design</h3>
+                        <img class="card_img" id="responsive_img" src="images/responsive_icon.png">
                     </div>
-                    <p>
-                        &copy; 2023 Katherine Breed
-                    </p>
-                    <p>
-                        Parts of content recreated for personal VG247 mockup website belongs to VG247.
-                    </p>
+                </div>      
+                
+                <!--Card Wrap 3-->
+                <div class="card_wrap3">
+                    <div class="card">
+                        <h3 class="card_header">Source Control</h3>
+                        <img class="card_img" src="images/source_control2.png">
+                    </div>
 
-                </div>
-            </main>
+            </div>
+        </main>
 
+        <div class="large_card_wrapper">
+            <div class="hero_card1">
+                <img class="hero_img" src="images/design.jpg">
+                <h3 class="hero_text">From design and prototyping</h3>
+            </div>
+
+            <div class="hero_card2">
+                <h3 class="hero_text">To development and deployment</h3>
+                <img class="hero_img" src="images/code2.jpg">
+            </div>
         </div>
 
+        <footer>
+            <p>Website by Katherine Breed</p>
+            <p>&copy;2024</p>
+        </footer>
+
+   
     </body>
 </html>
