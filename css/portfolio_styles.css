@@ -297,7 +297,7 @@ p {
 
 .card {
     height: 8em;
-    box-shadow: 4px 4px #888888;
+    box-shadow: 8px 5px 5px #888888;
 }
 
 .large_card_wrapper {
@@ -338,22 +338,24 @@ footer {
 
 /*Course Project Content*/
 .bookshop_img_dt {
-    padding-left: 2em;
-    padding-right: 2em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    border: 1px solid #000000;
+    box-shadow: 10px 5px 5px #383636;
 }
 
 .bookshop_img_mob {
-    padding-left: 2em;
-    padding-right: 2em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    border: 1px solid #000000;
+    box-shadow: 10px 5px 5px #383636;
 }
 
 .copyright {
     margin-top: 1em;
 }
+
+
 
 /*==========================
         RESPONSIVE
