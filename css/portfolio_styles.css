@@ -17,10 +17,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /*===============================
         TYPOGRAPHY
 ================================*/
-nav ul > li {
-    text-transform: uppercase;
-}
-
 body {
     line-height: 1.5;
     font-family: 'Courier New', Courier, monospace;
@@ -44,6 +40,10 @@ h1 {
 nav {
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+nav ul > li {
+    text-transform: uppercase;
 }
 
 .card {
@@ -76,17 +76,54 @@ footer {
 /*===============================
     STYLING AND COLOUR
 ================================*/
+:root {
+    --background-color: #e4e9ee;
+    --text-color: #383636;
+    --heading-color: #000000;
+    --ext_links_color: #000000;
+    --ext_links_color: #000000;
+    --nav_color: #383636;
+}
+
 body {
-    background-color: #e4e9ee;
-    color: #383636;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+.ext_link_text {
+    color: var(--ext_links_color);
+}
+
+#nav_list .nav_item a {
+    color: var(--nav_color);
+}
+
+/*Dark Theme*/
+body.dark_theme {
+    --background-color: #383636;
+    --text-color: #e4e9ee;
+    --heading-color: #ffffff;
+    --ext_links_color: #ffffff;
+    --nav_color: #ffffff;
 }
 
 header, footer {
     background-color: #417a86;
 }
 
-h1, h2, h3 {
-    color: #000000;
+/* Select Box Styling */
+#select_theme {
+padding: 4px 14px;
+font-size: 1em;
+cursor: pointer;
+}
+
+#select_theme:focus {
+box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2);
 }
 
 nav {
@@ -105,7 +142,6 @@ ul {
 }
 
 #nav_list .nav_item a {
-    color: #383636;;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -253,6 +289,10 @@ h3, h4 {
 
 p {
     margin-top: 1em;
+}
+
+#select_theme {
+    margin-top: 2em;
 }
 
 .card {

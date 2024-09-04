@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="css/portfolio_styles.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script src="js/portfolio_js.js" defer></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
     </head>
 
     <!--Google Analytics-->
@@ -53,6 +57,14 @@
                         <img class="ext_link_img" src="images/github-mark/github-mark.png">
                         <p class="ext_link_text">GitHub</p>
                     </a>
+                </div>
+
+                <!--Light and Dark Theme-->
+                <div id="theme_wrap">
+                    <select id="select_theme">
+                        <option value="light">Light Theme</option>
+                        <option value="dark">Dark Theme</option>
+                    </select>
                 </div>
             </div>
         </header>

@@ -1,3 +1,4 @@
+///
 //Enlarge Image
 function enlargeImage(img) {
     // Create an overlay element
@@ -32,14 +33,36 @@ function enlargeImage(img) {
     });
 }
 
+
+////
+//Hover effect for home page cards
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
   card.addEventListener('mouseover', () => {
-    card.style.backgroundColor = '#f0f0f0';
+    card.style.backgroundColor = '#e9e9e9';
   });
 
   card.addEventListener('mouseout', () => {
     card.style.backgroundColor = '#fff';
+  });
+});
+
+
+////
+//Light and Dark Theme
+document.addEventListener('DOMContentLoaded', function() {
+  const selectTheme = document.getElementById('select_theme');
+
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.body.classList.toggle('dark_theme', savedTheme === 'dark');
+  selectTheme.value = savedTheme;
+
+  // Update theme when the selection changes
+  selectTheme.addEventListener('change', function() {
+    const theme = selectTheme.value;
+    document.body.classList.toggle('dark_theme', theme === 'dark');
+    localStorage.setItem('theme', theme);
   });
 });
