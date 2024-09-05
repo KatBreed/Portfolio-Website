@@ -106,9 +106,9 @@ h1, h2, h3 {
 body.dark_theme {
     --background-color: #383636;
     --text-color: #e4e9ee;
-    --heading-color: #ffffff;
-    --ext_links_color: #ffffff;
-    --nav_color: #ffffff;
+    --heading-color: #e4e9ee;
+    --ext_links_color: #e4e9ee;
+    --nav_color: #e4e9ee;
 }
 
 header, footer {
