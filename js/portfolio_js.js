@@ -13,6 +13,7 @@ function enlargeImage(img) {
     overlay.style.alignItems = "center";
     overlay.style.justifyContent = "center";
     overlay.style.zIndex = "9999";
+    overlay.style.cursor = "zoom-out";
     
     // Create an image element within the overlay
     var enlargedImg = document.createElement("img");
@@ -35,7 +36,7 @@ function enlargeImage(img) {
 
 
 ////
-//Hover effect for home page cards
+// Hover effect for home page cards
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
@@ -50,7 +51,7 @@ cards.forEach(card => {
 
 
 ////
-//Light and Dark Theme
+// Light and Dark Theme
 document.addEventListener('DOMContentLoaded', function() {
   const selectTheme = document.getElementById('select_theme');
 

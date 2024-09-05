@@ -250,7 +250,7 @@ ul {
 }
 
 .bookshop_img_dt, .bookshop_img_mob {
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 /*Contact Content*/
