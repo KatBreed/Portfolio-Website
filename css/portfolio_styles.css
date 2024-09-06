@@ -207,6 +207,13 @@ ul {
     flex-direction: row;
 }
 
+#theme_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .card_img {
     width: 4em;
     max-height: 100%;
