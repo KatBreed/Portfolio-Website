@@ -60,6 +60,10 @@ nav ul > li {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.size_title {
+    text-align: center;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -356,6 +360,11 @@ footer {
     margin-bottom: 1.5em;
     border: 1px solid #000000;
     box-shadow: 10px 5px 5px #383636;
+}
+
+.size_title {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .copyright {
