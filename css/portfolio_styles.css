@@ -1,297 +1,36 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section 
-{
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
     margin: 0;
     padding: 0;
     border: 0;
 }
- 
+
 * {
     box-sizing: border-box;
 }
 
-/*========================
-    BASE MOBILE SIZE
-=========================*/
-
-
 /*===============================
         TYPOGRAPHY
 ================================*/
+
 body {
     line-height: 1.5;
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
 }
 
-header {
-    text-align: center;
+h1, h2, h3 {
+    color: var(--heading-color);
+    font-weight: bold;
 }
 
 h1 {
     font-size: 2em;
-    font-weight: bold;
     text-align: center;
 }
 
-.avatar_div {
-    text-align: center;
-}
-
-nav {
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-nav ul > li {
-    text-transform: uppercase;
-}
-
-.card {
-    text-align: center;
-}
-
-.card_header {
+h2 {
     font-size: 1.5em;
-}
-
-.hero_text {
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.size_title {
     text-align: center;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/*Contact Content*/
-.email {
-    color:#383636;
-    font-weight: bold;
-}
-
-/*===============================
-    STYLING AND COLOUR
-================================*/
-:root {
-    --background-color: #e4e9ee;
-    --text-color: #383636;
-    --heading-color: #000000;
-    --ext_links_color: #000000;
-    --ext_links_color: #000000;
-    --nav_color: #383636;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-h1, h2, h3 {
-    color: var(--heading-color);
-}
-
-.ext_link_text {
-    color: var(--ext_links_color);
-}
-
-#nav_list .nav_item a {
-    color: var(--nav_color);
-}
-
-/*Dark Theme*/
-body.dark_theme {
-    --background-color: #383636;
-    --text-color: #e4e9ee;
-    --heading-color: #e4e9ee;
-    --ext_links_color: #e4e9ee;
-    --nav_color: #e4e9ee;
-}
-
-header, footer {
-    background-color: #417a86;
-}
-
-/* Select Box Styling */
-#select_theme {
-padding: 4px 14px;
-font-size: 1em;
-cursor: pointer;
-}
-
-#select_theme:focus {
-box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2);
-}
-
-nav {
-    background-color: #5299A8;
-}
-
-.nav_item {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-ul {
-    list-style-type: none;
-    list-style-position: inside;
-}
-
-#nav_list .nav_item a {
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-#nav_list .nav_item a:hover {
-    background-color: #417a86;
-}
-
-.ext_link:hover {
-    text-decoration: none;
-}
-
-.avatar {
-    border-radius: 50%;
-    height: 5em;
-    max-width: 100%;
-}
-
-.span1 {
-    font-weight: bold;
-    font-style: italic;
-}
-
-.span2 {
-    font-style: italic;
-}
-
-.card {
-    background-color: #ffffff
-}
-
-.card_header {
-    color: #157da3;
-}
-
-.copyright {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.ext_link {
-    cursor: pointer;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.ext_link_img {
-    max-width: 100%;
-    height: 2em;
-}
-
-.external_links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.ext_link {
-    display: flex;
-    flex-direction: row;
-}
-
-#theme_wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.card_img {
-    width: 4em;
-    max-height: 100%;
-}
-
-#responsive_img {
-    width: 7em;
-    max-height: 100%;
-}
-
-.large_card_wrapper {
-    background-color: #c4d0db;
-}
-
-.hero_card1, .hero_card2 {
-    text-align: center;
-}
-
-.hero_text {
-    color: #165f79;
-}
-
-.hero_img {
-    height: 12em;
-    max-width: 100%;
-}
-
-/*Course Project Content*/
-.bookshop_img_dt {
-    width: 18em;
-    max-height: 100%;
-}
-
-.bookshop_img_mob {
-    width: 13em;
-    max-height: 100%;
-}
-
-.book_container {
-    text-align: center;
-}
-
-.bookshop_img_dt, .bookshop_img_mob {
-    cursor: zoom-in;
-}
-
-/*Contact Content*/
-#email_icon {
-    max-width: 100%;
-    height: 5em;
-}
-
-#email_icon_wrapper {
-    text-align: center;
-}
-
-/*===============================
-    MARGINS, PADDING, BORDERS
-================================*/
-nav {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-header {
-    padding: 2em;
-}
-
-main {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
 }
 
 h3, h4 {
@@ -302,320 +41,149 @@ p {
     margin-top: 1em;
 }
 
-#select_theme {
-    margin-top: 2em;
+nav {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: #5299A8;
+    padding: 1em 2em;
 }
 
-.card {
-    height: 8em;
-    box-shadow: 8px 5px 5px #888888;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
 }
 
-.large_card_wrapper {
-    margin-top: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+.nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--nav-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.hero_card1, .hero_card2 {
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-}
-.hero_text {
-    margin-bottom: 1.2em;
+.nav-link:hover {
+    background-color: #417a86;
 }
 
-.ext_link_img {
-    margin-right: 1.5em;
+/*===============================
+    STYLING AND COLOUR
+================================*/
+
+:root {
+    --background-color: #e4e9ee;
+    --text-color: #383636;
+    --heading-color: #000000;
+    --nav-color: #383636;
+    --ext-links-color: #000000;
+    --primary-bg-color: #417a86;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--primary-bg-color);
+}
+
+header {
+    padding: 2em;
     text-align: center;
 }
 
-.ext_link_text {
-    margin: 0;
-}
-
-.ext_link_div {
-    margin-top: 2em;
-}
-
-#github_div {
-    margin-top: 1.2em;
-    margin-bottom: .5em;
-}
-
 footer {
-    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 
-/*Course Project Content*/
-.bookshop_img_dt {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    border: 1px solid #000000;
-    box-shadow: 10px 5px 5px #383636;
+/* External Links Styling */
+.ext-link-text, .ext-link {
+    color: var(--ext-links-color);
 }
 
-.bookshop_img_mob {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    border: 1px solid #000000;
-    box-shadow: 10px 5px 5px #383636;
+.ext-link-text {
+    margin: 0;
+    font-style: italic;
+    display: flex;
+    gap: 0.5em;
 }
 
-.size_title {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+.ext-link:hover {
+    text-decoration: none;
 }
 
-.copyright {
-    margin-top: 1em;
+#avatar {
+    border-radius: 50%;
+    height: 8em;
+    max-width: 100%;
 }
 
-
-
-/*==========================
-        RESPONSIVE
-============================*/
-/*--- LAPTOP SCREEN - GRID AND FLEX---*/
-@media screen and (min-width: 62rem)  {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 62rem 1fr;
-    }
-
-    header {
-        grid-column: 1 / 4;
-        grid-row: 1;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #nav_list {
-        grid-column: 1 / 4;
-        grid-row: 2;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    main {
-        grid-column: 2 / 3;
-        grid-row: 3;
-    } 
-
-    .card_wrap1, .card_wrap2, .card_wrap3 {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero_card1, .hero_card2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .large_card_wrapper {
-        grid-column: 1 / 4;
-        grid-row: 4;
-    }
-
-    .book_container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    footer {
-        grid-column: 1 / 4;
-        grid-row: 5;
-        align-items: flex-end;
-        justify-content: center;
-    }
-
-/*===============================
-    Styling
-================================*/ 
-    .avatar {
-        height: 5em;
-        max-width: 100%;
-    }
-
-    .card {
-        height: 20em;
-        width: 20em;
-    }
-
-    .card_img {
-        max-width: 100%;
-        height: 5em;
-    }
-
-    .hero_img {
-        height: 25em;
-        max-width: 100%;
-    }
-
-    .ext_link_img {
-        max-width: 100%;
-        height: 2em;
-    }
-
-/*===============================
-    Typography
-================================*/ 
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-/*===============================
-    MARGINS, PADDING, BORDERS
-================================*/
-    #nav_list .nav_item a {
-        padding: 1em;
-    }
-
-    main {
-        margin-top: 3em;
-        margin-bottom: 3em;
-        margin-left: 6em;
-        margin-right: 6em;
-    }
-
-    .card_wrap1, .card_wrap2, .card_wrap3 {
-        margin-top: 4em;
-        margin-bottom: 2em;
-    }
-
-    .card_img {
-        margin-top: 2em;
-    }
-
-   .large_card_wrapper {
-        margin-top: 1em;
-        padding-top: .5em;
-        padding-bottom: 3em;
-   }
-
-   .hero_card1, .hero_card2 {
-        margin-top: 3em;
-   }
-
-   .hero_img {
-        margin-left: 10em;
-        margin-right: 10em;
-   }
-
-   .hero_text {
-        width: 10em;
-   }
-
-    footer {
-        padding-right: 2em;
-    }
+.hero-text {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #165f79;
 }
 
-/*--- FULL SCREEN STANDARD DESKTOP- GRID AND FLEX---*/
-@media screen and (min-width: 85rem) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 85rem 1fr;
-    }
-
-    header {
-        grid-column: 1 / 4;
-        grid-row: 1;
-    }
-
-    nav {
-        grid-column: 1 / 4;
-        grid-row: 2;
-    }
-
-    main {
-        grid-column: 2 / 3;
-        grid-row: 3;
-    }
-    .large_card_wrapper {
-        grid-column: 1 / 4;
-        grid-row: 4;
-    }
-
-    footer {
-        grid-column: 1 / 4;
-        grid-row: 5;
-    }
-
-    .book_container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
 /*===============================
-        TYPOGRAPHY
-================================*/
-    body {
-        text-align: justify;
-    }
-
-    nav {
-        text-align: left;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-/*===============================
-        STYLING
-================================*/
-    .avatar {
-        height: 7em;
-        max-width: 100%;
-    }
-
-    .bookshop_img_dt {
-        width: 25em;
-        max-height: 100%;
-    }
-    
-    .bookshop_img_mob {
-        width: 18em;
-        max-height: 100%;
-    }
-
-    .ext_link_img {
-        max-width: 100%;
-        height: 3em;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #nav_list {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-/*===============================
-    MARGINS, PADDING, BORDERS
+        Flexslider
 ================================*/
 
+.slick-carousel {
+    /* Ensure the flex container handles the images properly */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 15em; /* This will likely need to be adjusted for mobile */
+    margin-right: auto;
 }
+
+/* Adjust the slide layout for mobile devices */
+.slick-slide {
+    /* Ensure each slide takes up the full space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.slick-slide img {
+    /* Make sure the images are responsive and fill the container properly */
+    width: 35%; /* This might be too large on mobile, so we'll adjust */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block;
+    margin-right: 5px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .slick-carousel {
+        margin-left: 4.5em;
+        margin-right: 0;
+    }
+
+    .slick-slide img {
+        width: 70%; /* Increase the width to make the images larger on mobile */
+        margin-right: 0; 
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .slick-carousel {
+        margin-left: 3.5em; /* Adjust the margins for tablet if needed */
+        margin-right: 0;
+    }
+
+    .slick-slide img {
+        width: 60%; /* Slightly smaller images for tablet */
+    }
+}
+

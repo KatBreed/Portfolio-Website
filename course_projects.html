@@ -1,173 +1,183 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
-        <title>Katherine Breed</title>
-        <link rel="stylesheet" href="css/portfolio_styles.css">
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <script src="js/portfolio_js.js" defer></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
+    <title>Katherine Breed - Course Projects</title>
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <!-- Link to Bootstrap CSS and Custom CSS -->
+    <link rel="stylesheet" href="css/portfolio_styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-    </head>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!--Google Analytics-->
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-K5J5MLRDJJ');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K5J5MLRDJJ');
     </script>
 
-    <body>
-        <!--Title Header-->
-        <header>
-            <!--Avatar Pic-->
-            <div class="avatar_div">
-                <img class="avatar" src="images/avatar.jpg">
-            </div>
-            
-            <!--Title-->
-            <div>
-                <h1>Katherine Breed</h1>
-                <h2>Practice as my first live website!</h2>
-                <h3>Retail Customer Service / Studying for L5 Diploma in Web Development</h4>
+    <!-- Select2 (for dropdowns) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="js/portfolio_js.js" defer></script>
+</head>
+
+<body>
+    <!-- Title Header -->
+    <header class="container-fluid py-3">
+        <div class="row align-items-center">
+            <!-- Avatar -->
+            <div class="col-md-3 text-center">
+                <img id="avatar" class="avatar img-fluid rounded-circle" src="images/avatar.jpg" alt="Katherine Breed Avatar">
             </div>
 
-            <!--External Links-->
-            <div class="external_links">
+            <!-- Title & Info -->
+            <div class="col-md-6 text-center">
+                <h1 class="fw-bold">Katherine Breed</h1>
+                <h2 class="fs-5">Practice as my first live website!</h2>
+                <h3 class="fs-6 text-muted">Retail Customer Service / L5 Diploma in Web Development</h3>
+            </div>
 
-                <!--External Links - WordPress Photo Journal Subdomain-->
-                <div class="ext_link_div">
-                    <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
-                        <img class="ext_link_img" src="images/camera.png">
-                        <p class="ext_link_text">WP Photo Journal</p>
+            <!-- External Links -->
+            <div class="col-md-3 text-center">
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://photojournal.katherinebreed.co.nz" class="btn btn-outline-primary d-flex align-items-center" title="Visit Photo Journal">
+                        <img class="me-2" src="images/camera.png" alt="Photo Journal" width="24">
+                        WP Photo Journal
+                    </a>
+                    <a href="https://github.com/KatBreed" class="btn btn-outline-dark d-flex align-items-center" title="Visit GitHub Profile">
+                        <img class="me-2" src="images/github-mark/github-mark.png" alt="GitHub" width="24">
+                        GitHub
                     </a>
                 </div>
-
-                <!--External Links - GitHub-->
-                <div class="ext_link_div" id="github_div">
-                    <a class="ext_link" href="https://github.com/KatBreed">
-                        <img class="ext_link_img" src="images/github-mark/github-mark.png">
-                        <p class="ext_link_text">GitHub</p>
-                    </a>
-                </div>
-
-                <!--Light and Dark Theme-->
-                <div id="theme_wrap">
-                    <select id="select_theme">
-                        <option value="light">Light Theme</option>
-                        <option value="dark">Dark Theme</option>
-                    </select>
-                </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-            <!--Navigation Links-->
-            <nav>
-            <ul id="nav_list">
-                <li class="nav_item" id="purpose"><a href="index.html">Home</a></li>
-                <li class="nav_item" id="course_project"><a href="course_projects.html">Course Projects</a></li>
-                <li class="nav_item" id="course_project"><a href="home_projects.html">At Home Projects</a></li>
-                <li class="nav_item" id="course_project"><a href="about_me.html">About Me</a></li>
-                <li class="nav_item" id="course_project"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Links -->
+    <nav class="container-fluid d-flex justify-content-evenly align-items-center py-2">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="course_projects.html">Course Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="home_projects.html">At Home Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_me.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!--Course Project Content-->
-        <main>
-            <div id="course_project_content">
-                    
-                <div class="title">
-                    <h3>Course projects</h3>
-                </div>
-
-                <!--NZSI Course Project-->
-                <div>
-                    <h3>Create a single website for three different Luthiers</h3>
-                </div>
-
-                <div>
-                    <p>
-                        Having now completed my Diploma, the course finished out with having to produce a single streamlined website for three different Luthiers.
-                        This was put together using AWS with Ubuntu, Silverstripe CMS, Postgresql, Apache, WinSCP, and PHP as well as the core HTML, CSS, and Javascript. This also included designing it
-                        beforehand along with website specification and billing, and testing afterwards across the different courses.
-                    </p>
-                </div>
-
-                <!<!--NZSI Course Project Photos-->
-                <div>
-                    <h3 class="size_title">Desktop Size</h3>
-                </div>
-                <div class="book_container">
-                    <img class="bookshop_img_dt" src="images/nzsi_desktop_1.jpg" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_dt" src="images/nzsi_desktop_2.jpg" onclick="enlargeImage(this)">
-                </div>
-
-                <div class="book_container">
-                    <img class="bookshop_img_dt" src="images/nzsi_desktop_3.jpg" onclick="enlargeImage(this)">
-                </div>
-
-                <div>
-                    <h3 class="size_title">Mobile Size</h3>
-                </div>
-                <div class="book_container">
-                    <!--<img class="bookshop_img_mob" src="images/bookshop2.png" onclick="enlargeImage(this)">-->
-                    <img class="bookshop_img_mob" src="images/nzsi_mobile_1.jpg" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_mob" src="images/nzsi_mobile_2.jpg" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_mob" src="images/nzsi_mobile_3.jpg" onclick="enlargeImage(this)">
-                </div>
-                
-                <!--Ye Olde Bookshop Course Project-->
-                <div>
-                    <h3>Create a website for Ye Olde Bookshop</h3>
-                </div>
-                
-                <div>
-                    <p>
-                        Early on a course covered the core HTML and CSS and a little bit of JQuery. It was 
-                        not made to go live but we were tasked with creating a full website for a fictional client wanting to 
-                        create a presence for their book shop and restoration services. Each of us were also given a different 
-                        author and a book of theirs to focus on for an author page. This included repsonive design for all pages for mobile, tablet and dekstop sizes. Another requirement was a hamburger menu for mobile size and the use of 
-                        only one CSS file.
-                </div>
-
-                <!--Ye Olde Bookshop Course Project Photos-->
-                <div>
-                    <h3 class="size_title">Desktop Size</h3>
-                </div>
-                <div class="book_container">
-                    <img class="bookshop_img_dt" src="images/bookshop1.png" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_dt" src="images/bookshop5.png" onclick="enlargeImage(this)">
-                </div>
-
-                <div class="book_container">
-                    <img class="bookshop_img_dt" src="images/bookshop4.png" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_dt" src="images/bookshop6.png" onclick="enlargeImage(this)">
-                </div>
-
-                <div>
-                    <h3 class="size_title">Mobile Size</h3>
-                </div>
-                <div class="book_container">
-                    <!--<img class="bookshop_img_mob" src="images/bookshop2.png" onclick="enlargeImage(this)">-->
-                    <img class="bookshop_img_mob" src="images/bookshop3.png" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_mob" src="images/bookshop7.png" onclick="enlargeImage(this)">
-                    <img class="bookshop_img_mob" src="images/bookshop8.png" onclick="enlargeImage(this)">
-                </div>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1>Course Projects</h1>
             </div>
-        </main>
 
-        <footer>
-            <p>Website by Katherine Breed</p>
-            <p>&copy;2025</p>
-        </footer>
+            <!-- NZSI Course Project -->
+            <section>
+                <h3>Create a single website for three different Luthiers</h3>
+                <p>
+                    Having now completed my Diploma, the course finished out with having to produce a single streamlined website for three different Luthiers.
+                    This was put together using AWS with Ubuntu, Silverstripe CMS, Postgresql, Apache, WinSCP, and PHP as well as the core HTML, CSS, and Javascript. This also included designing it
+                    beforehand along with website specification and billing, and testing afterwards across the different courses.
+                </p>
+                <h4>Desktop and Mobile Views</h4>
+                <!-- Image Gallery for NZSI Project -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/nzsi_desktop_1.jpg" class="card-img-top img-fluid" alt="NZSI Website Desktop View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/nzsi_desktop_2.jpg" class="card-img-top img-fluid" alt="NZSI Website Desktop View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/nzsi_desktop_3.jpg" class="card-img-top img-fluid" alt="NZSI Website Desktop View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/nzsi_mobile_1.jpg" class="card-img-top img-fluid" alt="NZSI Website Mobile View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/nzsi_mobile_2.jpg" class="card-img-top img-fluid" alt="NZSI Website Mobile View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/nzsi_mobile_3.jpg" class="card-img-top img-fluid" alt="NZSI Website Mobile View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    </body>
+            <!-- Ye Olde Bookshop Course Project -->
+            <section>
+                <h3>Create a website for Ye Olde Bookshop</h3>
+                <p>
+                    Early on a course covered the core HTML and CSS and a little bit of JQuery. It was 
+                    not made to go live but we were tasked with creating a full website for a fictional client wanting to 
+                    create a presence for their book shop and restoration services. Each of us were also given a different 
+                    author and a book of theirs to focus on for an author page. This included responsive design for all pages for mobile, tablet and desktop sizes. 
+                    Another requirement was a hamburger menu for mobile size and the use of only one CSS file.
+                </p>
+
+                <h4>Desktop and Mobile Views</h4>
+                <!-- Image Gallery for Ye Olde Bookshop Project -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bookshop1.png" class="card-img-top img-fluid" alt="Ye Olde Bookshop Desktop View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bookshop6.png" class="card-img-top img-fluid" alt="Ye Olde Bookshop Desktop View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bookshop4.png" class="card-img-top img-fluid" alt="Ye Olde Bookshop Desktop View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bookshop3.png" class="card-img-top img-fluid" alt="Ye Olde Bookshop Mobile View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bookshop7.png" class="card-img-top img-fluid" alt="Ye Olde Bookshop Mobile View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bookshop8.png" class="card-img-top img-fluid" alt="Ye Olde Bookshop Mobile View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex justify-content-center align-items-center py-3">
+        <p>Website by Katherine Breed</p>
+        <p>&copy;2025</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
