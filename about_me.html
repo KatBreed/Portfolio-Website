@@ -4,100 +4,119 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
-        <title>Katherine Breed</title>
+        <title>Katherine Breed - About Me</title>
+
+        <!-- Link to Bootstrap CSS and Custom CSS -->
         <link rel="stylesheet" href="css/portfolio_styles.css">
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- Slick CSS - Flexislider -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script src="js/portfolio_js.js" defer></script>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-K5J5MLRDJJ');
+        </script>
     </head>
 
-    <!--Google Analytics-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-K5J5MLRDJJ');
-    </script>
-
     <body>
-        <header>
-            <!--Avatar Pic-->
-            <div class="avatar_div">
-                <img class="avatar" src="images/avatar.jpg">
-            </div>
-            
-            <!--Title-->
-            <div>
-                <h1>Katherine Breed</h1>
-                <h2>Practice as my first live website!</h2>
-                <h3>Retail Customer Service / Studying for L5 Diploma in Web Development</h4>
-            </div>
-
-            <!--External Links-->
-            <div class="external_links">
-
-                <!--External Links - WordPress Photo Journal Subdomain-->
-                <div class="ext_link_div">
-                    <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
-                        <img class="ext_link_img" src="images/camera.png">
-                        <p class="ext_link_text">WP Photo Journal</p>
-                    </a>
+        <!-- Title Header -->
+        <header class="container-fluid py-3">
+            <div class="row align-items-center">
+                <!-- Avatar -->
+                <div class="col-md-3 text-center">
+                    <img id="avatar" class="avatar img-fluid rounded-circle" src="images/ski_photo.jpg" alt="Katherine Breed Avatar">
                 </div>
 
-                <!--External Links - GitHub-->
-                <div class="ext_link_div" id="github_div">
-                    <a class="ext_link" href="https://github.com/KatBreed">
-                        <img class="ext_link_img" src="images/github-mark/github-mark.png">
-                        <p class="ext_link_text">GitHub</p>
-                    </a>
+                <!-- Title & Info -->
+                <div class="col-md-6 text-center">
+                    <h1 class="fw-bold">Katherine Breed</h1>
+                    <h2 class="fs-5">Practice as my first live website!</h2>
+                    <h3 class="fs-6 text-muted">Retail Customer Service / L5 Diploma in Web Development</h3>
+                </div>
+
+                <!-- External Links -->
+                <div class="col-md-3 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://photojournal.katherinebreed.co.nz" class="btn btn-outline-primary d-flex align-items-center">
+                            <img class="me-2" src="images/camera.png" alt="Photo Journal" width="24">
+                            WP Photo Journal
+                        </a>
+                        <a href="https://github.com/KatBreed" class="btn btn-outline-dark d-flex align-items-center">
+                            <img class="me-2" src="images/github-mark/github-mark.png" alt="GitHub" width="24">
+                            GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <!--Navigation Links-->
-        <nav>
-            <ul id="nav_list">
-                <li class="nav_item" id="purpose"><a href="index.html">Home</a></li>
-                <li class="nav_item" id="course_project"><a href="course_projects.html">Course Projects</a></li>
-                <li class="nav_item" id="course_project"><a href="home_projects.html">At Home Projects</a></li>
-                <li class="nav_item" id="course_project"><a href="about_me.html">About Me</a></li>
-                <li class="nav_item" id="course_project"><a href="contact.html">Contact</a></li>
-            </ul>
+        <!-- Navigation Links -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3d8fa0;">
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="course_projects.html">Course Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="home_projects.html">At Home Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="about_me.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <main>
-            <!--About Me Content-->
-            <div id="about_me_content">
-                <div class="title">
+        <!-- Main Content -->
+        <main class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
                     <h2>About Me</h2>
+                    <p>
+                        I grew up a child of the 80's in Morrinsville, New Zealand. I was always running around until I 
+                        discovered the likes of Sonic and Mario. I have memories of Atari, 20c arcades at the fish 'n' chips shop 
+                        and computers becoming a thing with Windows '95, DOS, and big floppy disks. I then moved and lived in 
+                        Whangarei, New Zealand for about 12 years before moving here to Christchurch in 2019.
+                    </p>
+                    <p> 
+                        I also grew up around horses as my Dad was a Harness Racing Trainer with pacers and 
+                        the odd trotter. But I have always been bit of a pop culture, gaming, computer, geek.
+                    </p>
+                    <p>
+                        I still game from time to time depending on how busy I am. I'm currently enjoying some Baldur's Gate 3 and Monster Hunter Rise. I also enjoy going for walks or 
+                        extended walks. During the pandemic I got into running which still comes and goes in phases depending on how busy I am. 
+                    </p>
+                    <p>
+                        I used to be into a bit of filming and video editing for youtube and purchased a Panasonic G7 camera, however that is now primarily used for photography 
+                        from time to time. I have a hearing loss for which I wear hearing aids.
+                    </p>
                 </div>
-                <p>
-                    I grew up a child of the 80's in Morrinsville, New Zealand. I was always running around until I 
-                    discovered the likes of Sonic and Mario. I have memories of Atari, 20c arcades at the fish 'n' chips shop 
-                    and computers becoming a thing with Windows '95, DOS, and big floppy disks. I then moved and lived in 
-                    Whangarei, New Zealand for about 12 years before moving here to Christchurch in 2019.
-                </p>
-                <p> 
-                    I also grew up around horses as my Dad was a Harness Racing Trainer with pacers and 
-                    the odd trotter. But I have always been bit of a pop culture, gaming, computer, geek.
-                </p>
-                <p>
-                    I still game from time to time depending on how busy I am. I'm currently enjoying some Baldur's Gate 3 and Monster Hunter Rise. I also enjoy going for walks or 
-                    extended walks. During the pandemic I got into running which still comes and goes in phases depending on how busy I am. 
-                </p>
-                <p>
-                    I used to be into a bit of filming and video editing for youtube and purchased a Panasonic G7 camera, however that is now primarily used for photography 
-                    from time to time. I have a hearing loss for which I wear hearing aids.
-                </p>
             </div>
         </main>
 
-        <footer>
+        <!-- Footer -->
+        <footer class="container-fluid d-flex justify-content-center align-items-center py-3">
             <p>Website by Katherine Breed</p>
             <p>&copy;2025</p>
         </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- jQuery (required for Slick.js) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Slick.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     </body>
 </html>

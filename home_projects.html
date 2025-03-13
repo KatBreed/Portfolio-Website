@@ -1,160 +1,186 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
-        <title>Katherine Breed</title>
-        <link rel="stylesheet" href="css/portfolio_styles.css">
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <script src="js/portfolio_js.js" defer></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web Development, Katherine Breed, Portfolio, HTML5, CSS, Javascript">
+    <title>Katherine Breed - Home Projects</title>
 
-    <!--Google Analytics-->
-    <!-- Google tag (gtag.js) -->
+    <!-- Link to Bootstrap CSS and Custom CSS -->
+    <link rel="stylesheet" href="css/portfolio_styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-K5J5MLRDJJ');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K5J5MLRDJJ');
     </script>
 
-    <body>  
-        <!--Title Header-->
-        <header>
-            <!--Avatar Pic-->
-            <div class="avatar_div">
-                <img class="avatar" src="images/avatar.jpg">
-            </div>
-            
-            <!--Title-->
-            <div>
-                <h1>Katherine Breed</h1>
-                <h2>Practice as my first live website!</h2>
-                <h3>Retail Customer Service / Studying for L5 Diploma in Web Development</h4>
+    <!-- Select2 (for dropdowns) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="js/portfolio_js.js" defer></script>
+</head>
+
+<body>
+    <!-- Title Header -->
+    <header class="container-fluid py-3">
+        <div class="row align-items-center">
+            <!-- Avatar -->
+            <div class="col-md-3 text-center">
+                <img id="avatar" class="avatar img-fluid rounded-circle" src="images/ski_photo.jpg" alt="Katherine Breed Avatar">
             </div>
 
-            <!--External Links-->
-            <div class="external_links">
+            <!-- Title & Info -->
+            <div class="col-md-6 text-center">
+                <h1 class="fw-bold">Katherine Breed</h1>
+                <h2 class="fs-5">Practice as my first live website!</h2>
+                <h3 class="fs-6 text-muted">Retail Customer Service / L5 Diploma in Web Development</h3>
+            </div>
 
-                <!--External Links - WordPress Photo Journal Subdomain-->
-                <div class="ext_link_div">
-                    <a class="ext_link" href="https://photojournal.katherinebreed.co.nz">
-                        <img class="ext_link_img" src="images/camera.png">
-                        <p class="ext_link_text">WP Photo Journal</p>
+            <!-- External Links -->
+            <div class="col-md-3 text-center">
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://photojournal.katherinebreed.co.nz" class="btn btn-outline-primary d-flex align-items-center" title="Visit Photo Journal">
+                        <img class="me-2" src="images/camera.png" alt="Photo Journal" width="24">
+                        WP Photo Journal
+                    </a>
+                    <a href="https://github.com/KatBreed" class="btn btn-outline-dark d-flex align-items-center" title="Visit GitHub Profile">
+                        <img class="me-2" src="images/github-mark/github-mark.png" alt="GitHub" width="24">
+                        GitHub
                     </a>
                 </div>
-
-                <!--External Links - GitHub-->
-                <div class="ext_link_div" id="github_div">
-                    <a class="ext_link" href="https://github.com/KatBreed">
-                        <img class="ext_link_img" src="images/github-mark/github-mark.png">
-                        <p class="ext_link_text">GitHub</p>
-                    </a>
-                </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!--Navigation Links-->
-        <nav>
-            <ul id="nav_list">
-                <li class="nav_item" id="purpose"><a href="index.html">Home</a></li>
-                <li class="nav_item" id="course_project"><a href="course_projects.html">Course Projects</a></li>
-                <li class="nav_item" id="course_project"><a href="home_projects.html">At Home Projects</a></li>
-                <li class="nav_item" id="course_project"><a href="about_me.html">About Me</a></li>
-                <li class="nav_item" id="course_project"><a href="contact.html">Contact</a></li>
+    <!-- Navigation Links -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3d8fa0;">
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="course_projects.html">Course Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="home_projects.html">At Home Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="about_me.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <!--Course Project Content-->
-        <main>                    
-            <div class="title">
-                <h3>At Home Projects</h3>
-                <h3>The Magicians Fansite and VG24/7 Mockup</h3>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2>At Home Projects</h2>
             </div>
-            
-            <!--The Magicians Project-->
-            <div>
-                <h3>The Magicians Fansite</h3>
-            </div>
-            
-            <div>
+
+            <!-- Magicians Fansite -->
+            <section>
+                <h4>The Magicians Fansite</h4>
+                <p>
                 <p>
                     I got into watching the tv series The Magicians and so ended up having a go at a fansite. The design of which was made on the fly. I wanted to take what 
                     I had learnt and apply it.
-                </p>
-                <p>
                     A good chunck of this project has been done but currently goes unfinished I put aimed to make pages for the actors, the characters, 
                     and episode descriptions for each season.
                 </p>
-            </div>
 
+                <h5>The Magicians Desktop and Mobile Views</h5>
+                <!-- Image Gallery for Magicians Fansite -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/magicians1.png" class="card-img-top img-fluid" alt="The Magicians Fantsite Desktop View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/magicians2.png" class="card-img-top img-fluid" alt="The Magicians Fantsite Desktop View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/magicians3.png" class="card-img-top img-fluid" alt="The Magicians Fantsite Desktop View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="mobile-img" src="images/magicians4.png" class="card-img-top img-fluid" alt="The Magicians Fantsite Mobile View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="mobile-img" src="images/magicians5.png" class="card-img-top img-fluid" alt="The Magicians Fantsite Mobile View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!--The Magicians Photos-->
-            <div>
-                <h3 class="size_title">The Magicicans Desktop Size</h3>
-            </div>
-            <div class="book_container">
-                <img class="bookshop_img_dt" src="images/magicians1.png">
-                <img class="bookshop_img_dt" src="images/magicians2.png">
-            </div>
-
-            <div class="book_container">
-                <img class="bookshop_img_dt" src="images/magicians3.png">
-            </div>
-
-            <div>
-                <h3 class="size_title">The Magicians Mobile Size</h3>
-            </div>
-            <div class="book_container">
-                <img class="bookshop_img_mob" src="images/magicians4.png">
-                <img class="bookshop_img_mob" src="images/magicians5.png">
-            </div>
-
-            <!--VG24/7 Mockup-->                    
-            <div>
-                <h3>VG24/7 Mockup</h3>
-            </div>
-            
-            <div>
+            <!-- VG24/7 Mockup -->
+            <section>
+                <h4>VG24/7 Mockup</h4>
                 <p>
                     With a break in classes over Christmas and New Year's I got my hands back on Web Development and decided to make a mockup of the real website VG24/7 as full as I can, and branch 
                     out into Javascript. It's a slightly different experience building something that is already desgined.
                 </p>
-            </div>
 
+                <h5>VG24/7 Desktop and Mobile Views</h5>
+                <!-- Image Gallery for VG24/7 Mockup -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/vg2471.png" class="card-img-top img-fluid" alt="VG24/7 Desktop View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/vg2472.png" class="card-img-top img-fluid" alt="VG24/7 Desktop View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/vg2477.png" class="card-img-top img-fluid" alt="VG24/7 Desktop View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="mobile-img" src="images/vg2474.png" class="card-img-top img-fluid" alt="VG24/7 Mobile View 1" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="mobile-img" src="images/vg2475.png" class="card-img-top img-fluid" alt="VG24/7 Mobile View 2" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="mobile-img" src="images/vg2476.png" class="card-img-top img-fluid" alt="VG24/7 Mobile View 3" onclick="enlargeImage(this)">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-            <!--VG24/7 Photos-->
-            <div>
-                <h3 class="size_title">VG24/7 Desktop Size<h3>
-            </div>
-            <div class="book_container">
-                <img class="bookshop_img_dt" src="images/vg2473.png" onclick="enlargeImage(this)">
-                <img class="bookshop_img_dt" src="images/vg2472.png" onclick="enlargeImage(this)">
-            </div>
+    <!-- Footer -->
+    <footer class="container-fluid d-flex justify-content-center align-items-center py-3">
+        <p>Website by Katherine Breed</p>
+        <p>&copy;2025</p>
+    </footer>
 
-            <div class="book_container">
-                <img class="bookshop_img_dt" src="images/vg2471.png" onclick="enlargeImage(this)">
-                <img class="bookshop_img_dt" src="images/vg2477.png" onclick="enlargeImage(this)">
-                
-            </div>
-
-            <div>
-                <h3 class="size_title">VG24/7 Mobile Size</h3>
-            </div>
-            <div class="book_container">
-                <img class="bookshop_img_mob" src="images/vg2475.png" onclick="enlargeImage(this)">
-                <img class="bookshop_img_mob" src="images/vg2476.png" onclick="enlargeImage(this)">
-                <img class="bookshop_img_mob" src="images/vg2474.png" onclick="enlargeImage(this)">
-            </div>
-        </main>
-
-        <footer>
-            <p>Website by Katherine Breed</p>
-            <p>&copy;2025</p>
-        </footer>
-
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
