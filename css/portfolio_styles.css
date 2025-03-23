@@ -39,6 +39,12 @@ h2 {
     gap: 2em;
 }
 
+p {
+    font-size: 1.25rem;  /* Same as .lead */
+    font-weight: 300;
+    font-family: var(--bs-font-sans-serif); /* Ensures consistency */
+}
+
 /*===============================
     COLORS AND GENERAL STYLING
 ================================*/
