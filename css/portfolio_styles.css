@@ -81,16 +81,16 @@ nav {
 /*===============================
         BUTTON STYLES
 ================================*/
-.btn-outline-primary, .btn-outline-dark {
-    --bs-btn-color: rgb(33, 32, 32);
-    --bs-btn-border-color: #124747;
-    background-color: #f5f2f2;
-    color: rgb(33, 32, 32);
+.btn-dark {
+    --bs-btn-bg: #d6d6d6 !important; 
+    --bs-btn-border-color: #d6d6d6 !important; 
+    --bs-btn-color: black !important; 
 }
 
-.btn-outline-primary:hover, .btn-outline-dark:hover {
-    background-color: #dcd9d9;
-    color: rgb(33, 32, 32);
+.btn-dark:hover {
+    --bs-btn-bg: #6c757d !important;
+    --bs-btn-border-color: #6c757d !important;
+    --bs-btn-color: white !important;
 }
 
 .nav-link {
